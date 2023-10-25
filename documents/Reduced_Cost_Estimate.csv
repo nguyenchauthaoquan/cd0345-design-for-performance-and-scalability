@@ -1,0 +1,22 @@
+﻿Estimate summary,,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,,
+0,5983.84,71806.08,USD,,,,,,,
+,,* Includes upfront cost,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+Detailed Estimate,,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary,Rationale
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,44.276,531.31,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t3.medium), Pricing strategy ( 3 Year  None upfront), Enable monitoring (enabled), EBS Storage amount (50 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)","Changed the EC2 instance type from t3.2xlarge to t3.medium, "
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,240.7,2888.4,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (c5.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (50 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (5 TB per month)",
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,4366.656,52399.87,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (6 TB), Nodes (2), Instance Type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront), Additional backup storage (90 GB), Total Size of Backup Processed for Export (GB) (100 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50)",Changed the RDS instance type from db.m5.4xlarge to db.m5.2xlarge and from on-demand to 1-year prepaid reserved instances
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,585.5,7026,USD,,"Hosted Zones (1), Basic Checks Within AWS (50), Number of Elastic Network Interfaces (6)",Reduce Basic checks within AWS from 100 to 50 and Number of Elastic network interfaces from 10 to 6
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,493.65,5923.8,USD,,Number of NAT Gateways (1),
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,102.45,1229.4,USD,,Number of Application Load Balancers (1),
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,127.05,1524.6,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (6 TB per month), Processed bytes per NLB for UDP (6 TB per month), Processed bytes per NLB for TLS (6 TB per month)",
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,0,0,USD,,,
+My Estimate,US East (N. Virginia),,S3 Standard,0,23.55,282.6,USD,,S3 Standard storage (1 TB per month),
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+Acknowledgement,,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,,
