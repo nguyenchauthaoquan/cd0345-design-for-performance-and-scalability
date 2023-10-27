@@ -1,22 +1,39 @@
-﻿Estimate summary,,,,,,,,,,
-Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,,
-0,19882.85,238594.2,USD,,,,,,,
-,,* Includes upfront cost,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-Detailed Estimate,,,,,,,,,,
-Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary,Rationale
-My Estimate,US East (N. Virginia),,Amazon EC2 ,0,271.344,3256.13,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (t3.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (50 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)","Increase the number of instances from 2 to 4, change to t3.large"
-My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1123.6,13483.2,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (c5.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (50 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (5 TB per month)","Increase the number of instances from 2 to 4, change to c5.2xlarge"
-My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,8958.67,107504.04,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (6 TB), Nodes (2), Instance Type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront), Additional backup storage (90 GB), Total Size of Backup Processed for Export (GB) (100 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50)",Change the RDS instance type to m5.8xlarge
-My Estimate,US East (N. Virginia),,Amazon Route 53,0,585.5,7026,USD,,"Hosted Zones (1), Basic Checks Within AWS (50), Number of Elastic Network Interfaces (6)",
-My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,493.65,5923.8,USD,,Number of NAT Gateways (1),
-My Estimate,US East (N. Virginia),,Application Load Balancer,0,303.15,3637.8,USD,,Number of Application Load Balancers (1),Increase all the byte for processing to 10 TB/month
-My Estimate,US East (N. Virginia),,Network Load Balancer,0,200.77,2409.24,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (10 TB per month), Processed bytes per NLB for UDP (10 TB per month), Processed bytes per NLB for TLS (10 TB per month)","Increase the  number of processed TB per month (NLB for TCP, NLB for UDP. NLB for TLS) from 6 to 10 TB/month"
-My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,7922.6164,95071.4,USD,,"Number of Metrics (includes detailed and custom metrics) (10), GetMetricData: Number of metrics requested (10), GetMetricWidgetImage: Number of metrics requested (10), Number of other API requests (10), Standard Logs: Data Ingested (6 TB), Logs Delivered to CloudWatch Logs: Data Ingested (6 TB), Logs Delivered to S3: Data Ingested (6 TB)",
-My Estimate,US East (N. Virginia),,S3 Standard,0,23.55,282.6,USD,,S3 Standard storage (1 TB per month),
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-Acknowledgement,,,,,,,,,,
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,,
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,19975.26,239703.12,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1330.28,15963.36,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (m5.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1201.8,14421.6,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (c5.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,16024.64,192295.68,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (5 TB), Nodes (2), Instance Type (db.m5.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,127.49,1529.88,USD,,"S3 Standard storage (5 TB per month), Data scanned by S3 Select (3 TB per month), Data returned by S3 Select (5 TB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,176.64,2119.68,USD,,"S3 Standard-IA storage (5 TB per month), Data retrievals (5 TB per month), Data returned by S3 Select (5 TB per month), Data scanned by S3 Select (5 TB per month)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Not selected (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 instances (2), Number of EIPs per instance (1)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,987.3,11847.6,USD,,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,73.77,885.24,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,53.34,640.08,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (2 TB per month), Processed bytes per NLB for UDP (2 TB per month), Processed bytes per NLB for TLS (2 TB per month)"
+,,,,,,,,,
+Rationale,,,,,,,,,
+"because the budget is provided from $18,000 to 20,000, we should utilize the best performance for each instances if posible so we can change the below configuration of all EC2 instance (both m5 and c5 instances) due to the reasons:",,,,,,,,,
+"1. Updated from m5.large to m5.4xlarge: both require the EBS storage, but m5.4xlarge has 16 CPUs and 64Gb memory is to ensure the best performance of the web server instance (better than m5.xlarge), while the m5.large has 2 CPUs and 8gb memory and cheaper than m5.xlarge, it is to ensure the sufficient performance (optimal) of the web server instance, because the budget is provided from $18,000 to 20,000, we should utilize the best performance for each instances if posible. ",,,,,,,,,
+"2. Updated from c5.large to c5.4xlarge: both require the EBS storage, but c5.4xlarge has 16 CPUs and 32Gb memory is to ensure the best performance of the application server instance (better than c4.xlarge), while the c5.large has 2 CPUs and 4gb memory and cheaper than m5.xlarge, it is to ensure the sufficient performance (optimal) of the application server instance.",,,,,,,,,
+"3. Updated the payment options from On-demand 100% utilization percent per hours to convertible reverved instances: both options are good, but the convertible reverved instances (cost with no upfront is only 35.77/month for m5 instances, and 62.05/month for c5 instances)  is cheaper than On-demand 100% utilization percent per hours (70.08/month for m5 instances, and 29.93/month for c5 instances)  . The reason to change to  On-demand 100% utilization percent per hours is due to the extended budget.",,,,,,,,,
+,,,,,,,,,
+"because the budget is provided from $18,000 to 20,000, we should utilize the performance of reading and modification of the RDS as well by Changing the below configuration for RDS instances due to the reasons:",,,,,,,,,
+"1. Change the instance type from m5.large to m5.12xlarge: the m5.12xlarge provide 48 CPUs and 192Gbs memory is to ensure the best performance of reading and modification process (better than m5.4xlarge from the initial one) as posible, the m5.large provide the optimal performance of reading and modification for the insufficient budget case (for the below $6500 case).",,,,,,,,,
+"2. Reduce the storage amount from 6 to 5 TB, 5TB is already sufficient to store the big datas",,,,,,,,,
+,,,,,,,,,
+Extend the s3 standard storage from 1 to 5TB and add 5TB s3 infrequent access due to:,,,,,,,,,
+1. More files data savings (for the hosting use for s3 standard storage),,,,,,,,,
+"2. use s3 infrequent access for storing the logging files (Data retrievals: 5TB, Data returned by S3 Select: 5TB/month, Data scanned by S3 Select: 5TB/month)",,,,,,,,,
+,,,,,,,,,
+Increase the Data Processed per NAT Gateway from 1 to 10 TB/month is to utilize the best network data ,,,,,,,,,
+Increase all the Processed bytes targets of Application load balancer from 500Gbs/month to 2tb is to utilize the best network data,,,,,,,,,
+"Increase all the processed bytes for TCP, UDP, TLS from 500Gbs/month to 2TB/months is to utilize the best network data",,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
